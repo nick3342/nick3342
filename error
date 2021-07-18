@@ -1,0 +1,90 @@
+calibre Debug log
+calibre 5.23 [64bit]  embedded-python: True is64bit: True
+Windows-10-10.0.19041 Windows ('64bit', 'WindowsPE')
+('Windows', '10', '10.0.19041')
+Python 3.8.5
+Windows: ('10', '10.0.19041', '', 'Multiprocessor Free')
+Interface language: None
+Successfully initialized third party plugins: Gather KFX-ZIP (from KFX Input) (1, 20, 0) && DeDRM (7, 2, 1) && Package KFX (from KFX Input) (1, 20, 0) && KFX metadata reader (from KFX Input) (1, 20, 0) && KFX Input (1, 20, 0) && Obok DeDRM (6, 5, 4)
+calibre 5.23 [64bit]  embedded-python: True is64bit: True
+Windows-10-10.0.19041 Windows ('64bit', 'WindowsPE')
+('Windows', '10', '10.0.19041')
+Python 3.8.5
+Windows: ('10', '10.0.19041', '', 'Multiprocessor Free')
+Interface language: None
+Successfully initialized third party plugins: Gather KFX-ZIP (from KFX Input) (1, 20, 0) && DeDRM (7, 2, 1) && Package KFX (from KFX Input) (1, 20, 0) && KFX metadata reader (from KFX Input) (1, 20, 0) && KFX Input (1, 20, 0) && Obok DeDRM (6, 5, 4)
+Turning on automatic hidpi scaling
+devicePixelRatio: 1.0
+logicalDpi: 120.0 x 120.0
+physicalDpi: 90.21564482029598 x 90.10135135135135
+Using calibre Qt style: True
+[0.00] Starting up...
+[0.02] Showing splash screen...
+[0.52] splash screen shown
+[0.52] Initializing db...
+[0.55] db initialized
+[0.55] Constructing main UI...
+[1.58] main UI initialized...
+[1.58] Hiding splash screen
+Starting QuickView
+[6.56] splash screen hidden
+[6.56] Started up in 6.56 seconds with 45 books
+Storage number map:
+{(7, 0): [(3, 'C')], (7, 1): [(1, 'F')], (7, 2): [(3, 'E')]}
+Storage number for USBSTOR\DISK&VEN_KINDLE&PROD_INTERNAL_STORAGE&REV_0310\6&2DE8CEF7&5: StorageDeviceNumber(type=7, number=1, partition_number=0)
+Drive letters for USBDevice(vendor_id=0x1949 product_id=0x4 bcd=0x310 devid=usb\vid_1949&pid_0004&rev_0310 devinst=15)
+{'drive_letters': ['F'],
+ 'pnp_id_map': {'F': '\\\\?\\usbstor#disk&ven_kindle&prod_internal_storage&rev_0310#6&2de8cef7&5#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}'},
+ 'readonly_drives': set(),
+ 'sort_map': {'F': (1, 1)}}
+Syncing cover thumbnails to workaround amazon cover bug
+Job: 0 Get device information started
+DeviceJob: 0 Get device information done, calling callback
+DeviceJob: 0 Get device information callback returned
+Job: 1 Set library information started
+DeviceJob: 1 Set library information done, calling callback
+DeviceJob: 1 Set library information callback returned
+Job: 2 Get list of books on device started
+DEBUG:    0.0 USBMS: Fetching list of books from device. Device= KINDLE2 oncard= None
+DEBUG:    0.0 USBMS: dirs are: F:\ documents
+DEBUG:    0.0 USBMS: scan from root False F:\documents
+DEBUG:    0.1 USBMS: count found in cache: 43, count of files in metadata: 43, need_sync: False
+DEBUG:    0.1 USBMS: Finished fetching list of books from device. oncard= None
+DEBUG:    0.1 USBMS: Fetching list of books from device. Device= KINDLE2 oncard= carda
+DEBUG:    0.1 USBMS: Fetching list of books from device. Device= KINDLE2 oncard= cardb
+DeviceJob: 2 Get list of books on device done, calling callback
+DeviceJob: metadata_downloaded: Starting set_books_in_library
+DeviceJob: set_books_in_library: books to process= 43
+DeviceJob: set_books_in_library finished: time= 0.004983186721801758
+DeviceJob: metadata_downloaded: updating views
+DeviceJob: metadata_downloaded: syncing
+DeviceJob: metadata_downloaded: refreshing ondevice
+DeviceJob: metadata_downloaded: sending metadata_available signal
+DeviceJob: 2 Get list of books on device callback returned
+Job: 0 Get device information finished
+No details available.
+Job: 2 Get list of books on device finished
+No details available.
+Job: 1 Set library information finished
+No details available.
+stdout+stderr from file dialog helper: [b'', b'']
+piped data from file dialog helper: [b'\xdf\x88\x8b\xea\x88.\t\x1fE\t\x92A)3\xa0\x8d\xd2l\xba\xbc\x1e\x12\x1b\xf9\xe2D\xb9/\xe9\x12\xf4\xec', b'F:\\documents\\Return of the God Hypothesis_ Three Scientific Discoveries That Reveal the Mind Behind the Universe_B07G122JJN.sdr']
+Device using plugboard epub save_to_disk None
+Device using plugboard mobi save_to_disk None
+Saved 1 books in 0.6 seconds
+Traceback (most recent call last):
+  File "calibre\gui2\ui.py", line 134, in __init__
+  File "calibre\gui2\ui.py", line 152, in init_iaction
+  File "calibre\customize\__init__.py", line 626, in load_actual_plugin
+  File "importlib\__init__.py", line 127, in import_module
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "calibre\customize\zipplugin.py", line 192, in exec_module
+  File "calibre_plugins.obok_dedrm.action", line 24, in <module>
+  File "calibre\customize\zipplugin.py", line 192, in exec_module
+  File "calibre_plugins.obok_dedrm.dialogs", line 30, in <module>
+  File "calibre\customize\zipplugin.py", line 192, in exec_module
+  File "calibre_plugins.obok_dedrm.utilities", line 10, in <module>
+ModuleNotFoundError: No module named 'StringIO'
